@@ -12,7 +12,7 @@ export default createGlobalStyle`
     outline: 0;
   }
   html, body, #root {
-    background: #333333;
+    background: #121212;
     height: 100%;
   }
   body {
@@ -29,5 +29,13 @@ export default createGlobalStyle`
   }
   button {
     cursor: pointer;
+  }
+
+  a, h2, h3, h4, span, p{
+    color: #a4a4a4;
+  }
+
+  h1{
+    color: #e1e1e1;
   }
 `;
