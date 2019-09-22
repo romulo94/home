@@ -12,7 +12,7 @@ export default createGlobalStyle`
     outline: 0;
   }
   html, body, #root {
-    background: #121212;
+    background: #222;
     height: 100%;
   }
   body {

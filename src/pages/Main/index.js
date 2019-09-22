@@ -9,6 +9,7 @@ import {
   Avatar,
   Stack,
   ContainerHeader,
+  ContainerDescription,
   Description,
 } from './styles';
 
@@ -21,10 +22,6 @@ export default function Main() {
           <Typist.Backspace count={9} delay={500} />
           <span> Fullstack </span>
         </Typist>
-        <p>
-          {/* Sou apaixa programação, atualmente focado em
-          JavaScript. NodeJS, ReactJS e React Native. */}
-        </p>
       </ContainerHeader>
       <Avatar src={avatar} alt="avatar" size={150} />
       <Stack>
@@ -32,23 +29,27 @@ export default function Main() {
           icon={DiNodejsSmall}
           text="NodeJs"
           color="#3c873a"
-          size={48}
+          size={60}
         />
-        <ImageStack icon={DiReact} text="ReactJS" color="#61dafb" size={48} />
+        <ImageStack icon={DiReact} text="ReactJS" color="#61dafb" size={60} />
         <ImageStack
           icon={DiReact}
           text="React Native"
           color="#61dafb"
-          size={48}
+          size={60}
         />
       </Stack>
-      <Description>
-        Sou Rômulo, desenvolvedor fullstack há mais de 2 anos. Sou um verdadeiro
-        amante de JavaScript e em todo ecossistema ao redor. Trabalho com as
-        principais tecnologias do mercado: NodeJs, ReactJs e React Native, atuei
-        em startups, empresas e alguns freelas. Tenho algumas aventuras com AWS,
-        Docker, Heroku e Netlify.
-      </Description>
+      <ContainerDescription>
+        <Description>
+          <p>
+            Sou <strong>Rômulo</strong>, desenvolvedor fullstack há mais de 2
+            anos. Sou um verdadeiro amante de JavaScript e em todo ecossistema
+            ao redor. Trabalho com as principais tecnologias do mercado: NodeJs,
+            ReactJs e React Native, atuei em startups, empresas e alguns
+            freelas. Tenho algumas aventuras com AWS, Docker, Heroku e Netlify.
+          </p>
+        </Description>
+      </ContainerDescription>
     </Container>
   );
 }

@@ -17,7 +17,6 @@ export const ContainerHeader = styled.div`
   span {
     color: #eee;
     font-size: 3em;
-    margin-bottom: 20px;
   }
 `;
 
@@ -35,11 +34,27 @@ export const Stack = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
-  max-width: 300px;
+  max-width: 360px;
 `;
 
-export const Description = styled.p`
+export const ContainerDescription = styled.div`
   display: flex;
   width: 100%;
-  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  background: #00000040;
+  margin-top: 36px;
+  padding: 20px;
+`;
+
+export const Description = styled.div`
+  max-width: 600px;
+
+  p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    font-weight: 300;
+  }
 `;
