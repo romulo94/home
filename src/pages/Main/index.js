@@ -4,20 +4,29 @@ import 'react-typist/dist/Typist.css';
 import Typist from 'react-typist';
 import avatar from '~/assets/avatar.svg';
 import ImageStack from '~/components/ImageStack';
-import { Container, Avatar, Stack } from './styles';
+import {
+  Container,
+  Avatar,
+  Stack,
+  ContainerHeader,
+  Description,
+} from './styles';
 
 export default function Main() {
   return (
     <Container>
-      <Typist avgTypingDelay={50}>
-        <span>Desenvolvedor Fullstack</span>
-        <Typist.Backspace count={8} delay={500} />
-        <span> Phrase </span>
-      </Typist>
-      <p>
-        Sou um verdadeiro amante da área de programação, atualmente focado em
-        JavaScript. NodeJS, ReactJS e React Native.
-      </p>
+      <ContainerHeader>
+        <Typist avgTypingDelay={50}>
+          <span>Desenvolvedor fullstack</span>
+          <Typist.Backspace count={9} delay={500} />
+          <span> Fullstack </span>
+        </Typist>
+        <p>
+          {/* Sou apaixa programação, atualmente focado em
+          JavaScript. NodeJS, ReactJS e React Native. */}
+        </p>
+      </ContainerHeader>
+      <Avatar src={avatar} alt="avatar" size={150} />
       <Stack>
         <ImageStack
           icon={DiNodejsSmall}
@@ -32,11 +41,14 @@ export default function Main() {
           color="#61dafb"
           size={48}
         />
-        {/* <DiNodejsSmall size={48} color="#3c873a" />
-        <DiReact size={48} color="#61dafb" />
-        <DiReact size={48} color="#61dafb" /> */}
       </Stack>
-      <Avatar src={avatar} alt="avatar" size={150} />
+      <Description>
+        Sou Rômulo, desenvolvedor fullstack há mais de 2 anos. Sou um verdadeiro
+        amante de JavaScript e em todo ecossistema ao redor. Trabalho com as
+        principais tecnologias do mercado: NodeJs, ReactJs e React Native, atuei
+        em startups, empresas e alguns freelas. Tenho algumas aventuras com AWS,
+        Docker, Heroku e Netlify.
+      </Description>
     </Container>
   );
 }
