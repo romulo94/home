@@ -4,20 +4,33 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
 `;
 
 export const ContainerHeader = styled.div`
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  flex-direction: row;
   align-items: center;
 
-  margin-bottom: 20px;
+  padding: 30px;
+  margin-top: 30px;
 
-  span {
-    color: #eee;
-    font-size: 3em;
+  div {
+    padding-left: 20px;
+
+    span {
+      color: #eee;
+      font-size: 3em;
+    }
+
+    div {
+      padding-left: 0;
+    }
   }
+`;
+
+export const Name = styled.p`
+  font-size: 18px;
 `;
 
 export const Avatar = styled.img`
@@ -39,7 +52,8 @@ export const Stack = styled.div`
 
 export const ContainerDescription = styled.div`
   display: flex;
-  width: 100%;
+  width: 80%;
+  border-radius: 15px;
   justify-content: center;
   align-items: center;
   background: #00000040;
@@ -52,9 +66,9 @@ export const Description = styled.div`
 
   p {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
-    letter-spacing: 2px;
-    font-weight: 300;
+    letter-spacing: 1px;
+    font-weight: 200;
   }
 `;

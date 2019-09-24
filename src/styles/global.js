@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import backgroung from '~/assets/background.svg';
 
 export default createGlobalStyle`
   @import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css);
@@ -11,15 +12,22 @@ export default createGlobalStyle`
   *:focus {
     outline: 0;
   }
-  html, body, #root {
-    background: #222;
+
+  html {
+    background: #191920;
+    height: 100vh;
+  }
+
+  body, #root {
+    background: #191920;
     height: 100%;
   }
+
   body {
     -webkit-font-smoothing: antialiased;
   }
   body, input, button {
-    font: 14px 'Fira Code' sans-serif;
+    font: 14px 'Fira Code', sans-serif;
   }
   a {
     text-decoration: none;

@@ -9,7 +9,7 @@ function App() {
     <>
       <Router>
         <GlobalStyle />
-        <Routes />;
+        <Routes />
       </Router>
     </>
   );
