@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import backgroung from '~/assets/background.svg';
+import colors from '~/styles/colors';
 
 export default createGlobalStyle`
   @import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css);
@@ -40,10 +40,6 @@ export default createGlobalStyle`
   }
 
   a, h2, h3, h4, span, p{
-    color: #a4a4a4;
-  }
-
-  h1{
-    color: #e1e1e1;
+    color: ${colors.secundary};
   }
 `;

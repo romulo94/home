@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import colors from '~/styles/colors';
 
 export const Container = styled.div`
   display: flex;
@@ -26,7 +27,7 @@ export const Info = styled.div`
   height: 100%;
 
   span {
-    color: #eee;
+    color: ${colors.primary};
     font-size: 3em;
   }
 
@@ -39,17 +40,13 @@ export const Info = styled.div`
     height: 80px;
     width: 100%;
     margin-bottom: 20px;
+
     span {
-      color: #eee;
-      font-size: 1.5em;
+      font-size: 2em;
     }
 
     div {
       padding-left: 0;
-    }
-    span {
-      color: #eee;
-      font-size: 2em;
     }
   }
 `;

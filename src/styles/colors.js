@@ -1,13 +1,14 @@
 export default {
   white: '#fff',
   lighter: '#eee',
-  light: '#ddd',
-  regular: '#999',
   dark: '#333',
   black: '#000',
 
-  primary: '#7a91ca',
-  secundary: '#444a5a',
+  regular: '#aaa',
+  light: '#ddd',
+
+  primary: '#eee',
+  secundary: '#a4a4a4',
   success: '#9dca83',
   danger: '#e37a7a',
 

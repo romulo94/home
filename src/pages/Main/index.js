@@ -1,16 +1,12 @@
 import React from 'react';
 import { DiNodejsSmall, DiReact } from 'react-icons/di';
 import { Line } from 'rc-progress';
-import 'react-typist/dist/Typist.css';
 import Typist from 'react-typist';
-import avatar from '~/assets/avatar.svg';
-import selfie1 from '~/assets/selfie-1.jpg';
-import selfie2 from '~/assets/selfie-2.jpg';
-import webfront from '~/assets/web-front';
+
 import smartphone from '~/assets/smartphone';
-import DatabaseCloud from '~/assets/database-cloud';
-import ImageStack from '~/components/ImageStack';
 import Image from '~/components/Image';
+import ImageStack from '~/components/ImageStack';
+
 import {
   Container,
   ContainerHeader,
@@ -22,6 +18,14 @@ import {
   ContainerDescription,
   Description,
 } from './styles';
+
+import selfie2 from '~/assets/selfie-2.jpg';
+import webfront from '~/assets/web-front';
+import DatabaseCloud from '~/assets/database-cloud';
+import AplicationFullStack from '~/assets/aplication-fullstack';
+
+import 'react-typist/dist/Typist.css';
+import colors from '~/styles/colors';
 
 export default function Main() {
   return (
@@ -37,9 +41,9 @@ export default function Main() {
           </Typist>
         </Info>
         <ContainerIconSVG>
-          <Image icon={DatabaseCloud} size={72} color="#aaa" />
-          <Image icon={webfront} size={72} color="#aaa" />
-          <Image icon={smartphone} size={72} color="#aaa" />
+          <Image icon={DatabaseCloud} size={72} color={colors.regular} />
+          <Image icon={webfront} size={72} color={colors.regular} />
+          <Image icon={smartphone} size={72} color={colors.regular} />
         </ContainerIconSVG>
       </ContainerHeader>
 
@@ -71,7 +75,17 @@ export default function Main() {
           </p>
         </Description>
       </ContainerDescription>
-      <Line percent="80" strokeWidth="0.5" strokeColor="#D3D3D3" />
+
+      <div>
+        <Image icon={AplicationFullStack} size={200} color={colors.dark} />
+      </div>
+
+      <Line
+        percent="80"
+        strokeWidth="2"
+        strokeColor="#D3D3D3"
+        trailWidth="10"
+      />
     </Container>
   );
 }

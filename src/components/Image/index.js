@@ -13,14 +13,13 @@ export default function Image({ icon: Icon, text, size, color }) {
 }
 
 Image.propTypes = {
+  color: PropTypes.string.isRequired,
   icon: PropTypes.func.isRequired,
   text: PropTypes.string,
   size: PropTypes.number,
-  color: PropTypes.string,
 };
 
 Image.defaultProps = {
   text: '',
   size: 36,
-  color: 'black',
 };
