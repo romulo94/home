@@ -1,11 +1,20 @@
 import React from 'react';
-import { DiNodejsSmall, DiReact } from 'react-icons/di';
+import {
+  DiNodejsSmall,
+  DiReact,
+  DiHtml5,
+  DiCss3,
+  DiMongodb,
+  DiRedis,
+  DiPostgresql,
+} from 'react-icons/di';
 import { Line } from 'rc-progress';
 import Typist from 'react-typist';
 
 import smartphone from '~/assets/smartphone';
 import Image from '~/components/Image';
 import ImageStack from '~/components/ImageStack';
+import Skill from '~/components/Skill';
 
 import {
   Container,
@@ -17,12 +26,17 @@ import {
   Stack,
   ContainerDescription,
   Description,
+  Skills,
+  ContainerLinks,
 } from './styles';
 
 import selfie2 from '~/assets/selfie-2.jpg';
 import webfront from '~/assets/web-front';
 import DatabaseCloud from '~/assets/database-cloud';
 import AplicationFullStack from '~/assets/aplication-fullstack';
+import Coding from '~/assets/coding';
+import GitHub from '~/assets/github';
+import LinkedIn from '~/assets/linkedin';
 
 import 'react-typist/dist/Typist.css';
 import colors from '~/styles/colors';
@@ -39,6 +53,11 @@ export default function Main() {
             <Typist.Backspace count={9} delay={500} />
             <span> Fullstack </span>
           </Typist>
+          <ContainerLinks>
+            <Image icon={Coding} size={48} color={colors.dark} cursor />
+            <Image icon={GitHub} size={48} color={colors.dark} cursor />
+            <Image icon={LinkedIn} size={48} color={colors.dark} cursor />
+          </ContainerLinks>
         </Info>
         <ContainerIconSVG>
           <Image icon={DatabaseCloud} size={72} color={colors.regular} />
@@ -80,12 +99,7 @@ export default function Main() {
         <Image icon={AplicationFullStack} size={200} color={colors.dark} />
       </div>
 
-      <Line
-        percent="80"
-        strokeWidth="2"
-        strokeColor="#D3D3D3"
-        trailWidth="10"
-      />
+      <Skill name="ReactJS" percent={85} />
     </Container>
   );
 }

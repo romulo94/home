@@ -21,6 +21,16 @@ export const ContainerHeader = styled.div`
   }
 `;
 
+export const ContainerLinks = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  /* @media (max-width: 600px) {
+    flex-direction: column;
+  } */
+`;
+
 export const Info = styled.div`
   padding-left: 20px;
   width: 650px;
@@ -57,7 +67,7 @@ export const Name = styled.p`
 
 export const Avatar = styled.img`
   box-shadow: 5px 5px 15px #000000;
-  border: 2px dashed rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   width: ${props => `${props.size}px`};
   height: ${props => `${props.size}px`};
@@ -103,4 +113,8 @@ export const Description = styled.div`
     letter-spacing: 1px;
     font-weight: 200;
   }
+`;
+
+export const Skills = styled.div`
+  width: 250px;
 `;
