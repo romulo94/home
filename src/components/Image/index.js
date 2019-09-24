@@ -3,20 +3,24 @@ import PropTypes from 'prop-types';
 
 import { Container } from './styles';
 
-export default function Image({ icon: Icon, text, size, ...rest }) {
+export default function Image({ icon: Icon, text, size, color }) {
   return (
     <Container size={size}>
-      <Icon />
+      <Icon size={size} fill={color} />
       <span>{text}</span>
     </Container>
   );
 }
 
-// Image.propTypes = {
-//   src: PropTypes.string.isRequired,
-//   text: PropTypes.string,
-// };
+Image.propTypes = {
+  icon: PropTypes.func.isRequired,
+  text: PropTypes.string,
+  size: PropTypes.number,
+  color: PropTypes.string,
+};
 
-// Image.defaultProps = {
-//   text: '',
-// };
+Image.defaultProps = {
+  text: '',
+  size: 36,
+  color: 'black',
+};

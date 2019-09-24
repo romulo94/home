@@ -5,9 +5,4 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   flex: 1;
-
-  img {
-    width: ${({ size }) => `${size}px`};
-    height: ${({ size }) => `${size}px`};
-  }
 `;

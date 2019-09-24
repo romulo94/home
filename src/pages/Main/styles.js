@@ -15,16 +15,41 @@ export const ContainerHeader = styled.div`
   padding: 30px;
   margin-top: 30px;
 
-  div {
-    padding-left: 20px;
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+`;
 
+export const Info = styled.div`
+  padding-left: 20px;
+  width: 650px;
+  height: 100%;
+
+  span {
+    color: #eee;
+    font-size: 3em;
+  }
+
+  div {
+    padding-left: 0;
+  }
+
+  @media (max-width: 600px) {
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+    margin-bottom: 20px;
     span {
       color: #eee;
-      font-size: 3em;
+      font-size: 1.5em;
     }
 
     div {
       padding-left: 0;
+    }
+    span {
+      color: #eee;
+      font-size: 2em;
     }
   }
 `;
@@ -43,6 +68,15 @@ export const Avatar = styled.img`
   margin: 20px;
 `;
 
+export const ContainerIconSVG = styled.div`
+  display: flex;
+  flex: 1;
+  align-self: baseline;
+  @media (max-width: 600px) {
+    display: none;
+  }
+`;
+
 export const Stack = styled.div`
   display: flex;
   width: 100%;
@@ -56,7 +90,8 @@ export const ContainerDescription = styled.div`
   border-radius: 15px;
   justify-content: center;
   align-items: center;
-  background: #00000040;
+  background: #00000060;
+  box-shadow: 5px 5px 15px #000000;
   margin-top: 36px;
   padding: 20px;
 `;

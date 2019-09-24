@@ -6,15 +6,19 @@ import Typist from 'react-typist';
 import avatar from '~/assets/avatar.svg';
 import selfie1 from '~/assets/selfie-1.jpg';
 import selfie2 from '~/assets/selfie-2.jpg';
-import webfront from '~/assets/web-front.svg';
+import webfront from '~/assets/web-front';
+import smartphone from '~/assets/smartphone';
+import DatabaseCloud from '~/assets/database-cloud';
 import ImageStack from '~/components/ImageStack';
 import Image from '~/components/Image';
 import {
   Container,
-  Name,
-  Avatar,
-  Stack,
   ContainerHeader,
+  Avatar,
+  Info,
+  ContainerIconSVG,
+  Name,
+  Stack,
   ContainerDescription,
   Description,
 } from './styles';
@@ -24,17 +28,19 @@ export default function Main() {
     <Container>
       <ContainerHeader>
         <Avatar src={selfie2} alt="avatar" size={200} />
-        <div>
+        <Info>
           <Name>Oi, sou Rômulo Rocha.</Name>
           <Typist avgTypingDelay={50}>
             <span>Desenvolvedor fullstack</span>
             <Typist.Backspace count={9} delay={500} />
             <span> Fullstack </span>
           </Typist>
-        </div>
-        <div>
-          <Image icon={webfront} size={36} />
-        </div>
+        </Info>
+        <ContainerIconSVG>
+          <Image icon={DatabaseCloud} size={72} color="#aaa" />
+          <Image icon={webfront} size={72} color="#aaa" />
+          <Image icon={smartphone} size={72} color="#aaa" />
+        </ContainerIconSVG>
       </ContainerHeader>
 
       <Stack>
@@ -65,7 +71,7 @@ export default function Main() {
           </p>
         </Description>
       </ContainerDescription>
-      <Line percent="80" strokeWidth="1" strokeColor="#D3D3D3" />
+      <Line percent="80" strokeWidth="0.5" strokeColor="#D3D3D3" />
     </Container>
   );
 }
