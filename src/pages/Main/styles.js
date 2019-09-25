@@ -19,7 +19,7 @@ export const ContainerHeader = styled.div`
   @media (max-width: 600px) {
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 30px 30px 0px;
     margin-top: 0px;
   }
 `;
@@ -34,7 +34,6 @@ export const ContainerLinks = styled.div`
 
 export const Info = styled.div`
   padding-left: 20px;
-  width: 650px;
 
   span {
     color: ${colors.primary};
@@ -43,6 +42,12 @@ export const Info = styled.div`
 
   div {
     padding-left: 0;
+  }
+
+  @media (max-width: 1000px) {
+    span {
+      font-size: 2em;
+    }
   }
 
   @media (max-width: 600px) {
@@ -91,6 +96,9 @@ export const Stack = styled.div`
   justify-content: space-between;
   max-width: 360px;
   margin-top: 30px;
+  @media (max-width: 600px) {
+    margin-top: 0;
+  }
 `;
 
 export const ContainerDescription = styled.div`
