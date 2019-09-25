@@ -15,6 +15,7 @@ import smartphone from '~/assets/smartphone';
 import Image from '~/components/Image';
 import ImageStack from '~/components/ImageStack';
 import Skill from '~/components/Skill';
+import ButtonIcon from '~/components/ButtonIcon';
 
 import {
   Container,
@@ -44,6 +45,12 @@ import colors from '~/styles/colors';
 export default function Main() {
   return (
     <Container>
+      <ContainerIconSVG>
+        <Image icon={DatabaseCloud} size={72} color={colors.regular} />
+        <Image icon={webfront} size={72} color={colors.regular} />
+        <Image icon={smartphone} size={72} color={colors.regular} />
+      </ContainerIconSVG>
+
       <ContainerHeader>
         <Avatar src={selfie2} alt="avatar" size={200} />
         <Info>
@@ -51,19 +58,25 @@ export default function Main() {
           <Typist avgTypingDelay={50}>
             <span>Desenvolvedor fullstack</span>
             <Typist.Backspace count={9} delay={500} />
-            <span> Fullstack </span>
+            <span>Fullstack</span>
           </Typist>
+
           <ContainerLinks>
-            <Image icon={Coding} size={48} color={colors.dark} cursor />
-            <Image icon={GitHub} size={48} color={colors.dark} cursor />
-            <Image icon={LinkedIn} size={48} color={colors.dark} cursor />
+            <ButtonIcon icon={Coding} size={48} color={colors.dark} link="" />
+            <ButtonIcon
+              icon={GitHub}
+              size={48}
+              color={colors.dark}
+              link="https://github.com/romulo94"
+            />
+            <ButtonIcon
+              icon={LinkedIn}
+              size={48}
+              color={colors.dark}
+              link="https://www.linkedin.com/in/romulo-rocha-de-oliveira-715a8a142/"
+            />
           </ContainerLinks>
         </Info>
-        <ContainerIconSVG>
-          <Image icon={DatabaseCloud} size={72} color={colors.regular} />
-          <Image icon={webfront} size={72} color={colors.regular} />
-          <Image icon={smartphone} size={72} color={colors.regular} />
-        </ContainerIconSVG>
       </ContainerHeader>
 
       <Stack>

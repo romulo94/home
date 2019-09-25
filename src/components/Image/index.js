@@ -3,7 +3,14 @@ import PropTypes from 'prop-types';
 
 import { Container } from './styles';
 
-export default function Image({ icon: Icon, text, size, color, cursor }) {
+export default function Image({
+  icon: Icon,
+  text,
+  size,
+  color,
+  cursor,
+  onClick,
+}) {
   return (
     <Container size={size} cursor={cursor} color={color}>
       <Icon size={size} fill={color} />

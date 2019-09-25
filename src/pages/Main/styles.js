@@ -5,6 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 `;
 
 export const ContainerHeader = styled.div`
@@ -13,8 +14,7 @@ export const ContainerHeader = styled.div`
   flex-direction: row;
   align-items: center;
 
-  padding: 30px;
-  margin-top: 30px;
+  padding: 0 30px 30px 30px;
 
   @media (max-width: 600px) {
     display: flex;
@@ -27,17 +27,14 @@ export const ContainerHeader = styled.div`
 export const ContainerLinks = styled.div`
   display: flex;
   width: 100%;
+  max-width: 250px;
   flex-direction: row;
-  align-items: center;
-  /* @media (max-width: 600px) {
-    flex-direction: column;
-  } */
+  justify-content: space-between;
 `;
 
 export const Info = styled.div`
   padding-left: 20px;
   width: 650px;
-  height: 100%;
 
   span {
     color: ${colors.primary};
@@ -81,6 +78,8 @@ export const ContainerIconSVG = styled.div`
   display: flex;
   flex: 1;
   align-self: baseline;
+  margin-left: 75%;
+  margin-top: 20px;
   @media (max-width: 600px) {
     display: none;
   }
