@@ -17,7 +17,10 @@ export const ContainerHeader = styled.div`
   margin-top: 30px;
 
   @media (max-width: 600px) {
+    display: flex;
     flex-direction: column;
+    padding: 30px;
+    margin-top: 0px;
   }
 `;
 
@@ -47,9 +50,7 @@ export const Info = styled.div`
 
   @media (max-width: 600px) {
     padding: 10px;
-    height: 80px;
     width: 100%;
-    margin-bottom: 20px;
 
     span {
       font-size: 2em;
@@ -57,6 +58,7 @@ export const Info = styled.div`
 
     div {
       padding-left: 0;
+      height: 80px;
     }
   }
 `;
@@ -89,26 +91,35 @@ export const Stack = styled.div`
   width: 100%;
   justify-content: space-between;
   max-width: 360px;
+  margin-top: 30px;
 `;
 
 export const ContainerDescription = styled.div`
-  display: flex;
-  width: 80%;
-  border-radius: 15px;
-  justify-content: center;
-  align-items: center;
-  background: #00000060;
-  box-shadow: 5px 5px 15px #000000;
-  margin-top: 36px;
-  padding: 20px;
+  @media (min-width: 601px) {
+    display: flex;
+    width: 80%;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    background: #00000060;
+    box-shadow: 5px 5px 15px #000000;
+    margin-top: 36px;
+    padding: 20px;
+  }
+
+  @media (max-width: 600px) {
+    background: #00000060;
+    margin: 20px 0px;
+  }
 `;
 
 export const Description = styled.div`
   max-width: 600px;
 
   p {
+    padding: 20px;
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
     letter-spacing: 1px;
     font-weight: 200;

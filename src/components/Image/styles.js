@@ -8,7 +8,6 @@ export const Container = styled.div`
   flex: 1;
   svg {
     cursor: ${props => (props.cursor ? 'pointer' : 'unset')};
-
     :hover {
       fill: ${props => lighten(0.075, props.color)};
     }

@@ -13,12 +13,7 @@ export default createGlobalStyle`
     outline: 0;
   }
 
-  html {
-    background: #191920;
-    height: 100vh;
-  }
-
-  body, #root {
+  html,body, #root  {
     background: #191920;
     height: 100%;
   }
