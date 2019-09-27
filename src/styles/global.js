@@ -12,8 +12,12 @@ export default createGlobalStyle`
   *:focus {
     outline: 0;
   }
+  html {
+    background: #191920;
+    min-height: 100vh;
+  }
 
-  html,body, #root  {
+  body, #root  {
     background: #191920;
     height: 100%;
   }
