@@ -1,15 +1,21 @@
 module.exports = {
   env: {
+    browser: true,
     es6: true,
     jest: true,
-    browser: true,
   },
-  extends: ['airbnb', 'prettier', 'prettier/react'],
+  // extends: ['airbnb', 'prettier', 'prettier/react'],
+  extends: [
+    'react-app',
+    'airbnb',
+    'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
+  ],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
-    __DEV__: true,
   },
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -17,11 +23,26 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ['react', 'jsx-a11y', 'import', 'react-hooks', 'prettier'],
+  plugins: [
+    'react',
+    '@typescript-eslint',
+    'jsx-a11y',
+    'import',
+    'react-hooks',
+    'prettier',
+  ],
   rules: {
+    'react/jsx-filename-extension': [
+      'error',
+      {
+        extensions: ['.tsx'],
+      },
+    ],
+    'import/prefer-default-export': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-member-accessibility': 'off',
     'prettier/prettier': 'error',
     'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],
-    'import/prefer-default-export': 'off',
     'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     'react/jsx-one-expression-per-line': 'off',
     'global-require': 'off',
@@ -35,10 +56,11 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
   },
   settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
     'import/resolver': {
-      'babel-plugin-root-import': {
-        rootPathSuffix: 'src',
-      },
+      typescript: {},
     },
   },
 };
