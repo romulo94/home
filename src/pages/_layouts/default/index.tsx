@@ -6,7 +6,11 @@ import Footer from 'components/Footer';
 
 import { Wrapper } from './styles';
 
-export default function DefaultLayout({ children }) {
+interface Props {
+  children: React.Component;
+}
+
+export default function DefaultLayout({ children }: Props) {
   return (
     <Wrapper>
       {/* <Header /> */}
@@ -15,7 +19,3 @@ export default function DefaultLayout({ children }) {
     </Wrapper>
   );
 }
-
-DefaultLayout.propTypes = {
-  children: PropTypes.element.isRequired,
-};
