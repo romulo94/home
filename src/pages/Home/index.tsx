@@ -10,7 +10,7 @@ import { Container } from './styles';
 export default function Home() {
   return (
     <Container>
-      <Head></Head>
+      <Head />
       <Stack />
       <Overview />
       <Info />
