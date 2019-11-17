@@ -8,12 +8,10 @@ import GlobalStyle from './styles/global';
 
 function App() {
   return (
-    <>
-      <Router>
-        <GlobalStyle />
-        <Routes />
-      </Router>
-    </>
+    <Router>
+      <GlobalStyle />
+      <Routes />
+    </Router>
   );
 }
 
