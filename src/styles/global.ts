@@ -14,7 +14,8 @@ export default createGlobalStyle`
     outline: 0;
   }
   html {
-    background: linear-gradient(0deg, ${Color.dark} , ${Color.semiblack} );
+    /* background: linear-gradient(0deg, ${Color.dark} , ${Color.semiblack} ); */
+    background:${Color.dracula} ;
     min-height: 100vh;
   }
 
