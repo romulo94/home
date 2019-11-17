@@ -3,6 +3,7 @@ import colors from 'styles/colors';
 
 export const Container = styled.div`
   max-width: 600px;
+  padding: 20px 0;
 
   p {
     padding: 20px;

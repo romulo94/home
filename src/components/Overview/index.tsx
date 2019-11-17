@@ -1,9 +1,6 @@
 import React from 'react';
-import { DiNodejsSmall, DiReact } from 'react-icons/di';
 
 import { Container } from './styles';
-
-import colors from 'styles/colors';
 
 export default function Overview() {
   return (
@@ -13,9 +10,18 @@ export default function Overview() {
         de JavaScript e do ecossistema ao redor. Trabalho com as principais
         tecnologias do mercado: <strong>NodeJs</strong>,{' '}
         <strong>ReactJs</strong> e <strong>React Native</strong>, atuei em
-        startups, empresas e alguns freelas. Tenho algumas aventuras com AWS,
-        Docker, Heroku e Netlify.
+        startups e empresas, atualmente faço parte da BossaBox como prolancer.
       </p>
+      <span>
+        De modo geral trabalho e tenho conhecimento sobre: Mongo, Postgres,
+        Redis, Express, NextJs, Serverless, Redux, Redux Saga, Typescript, Jest,
+        Docker, Docker Compose, Eslint, AWS, NWjs, Travis (CD/CI), Socket.io,
+        Swagger, RESTful, Sentry, JWT, traefik, html, css flexbox, scss e entre
+        outras ferramentas/libs.{' '}
+      </span>{' '}
+      <ul>
+        <span>Soft skills: Teamwork; Communication; Creativity</span>
+      </ul>
     </Container>
   );
 }

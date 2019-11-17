@@ -57,6 +57,9 @@ export default createGlobalStyle`
   span, li, a {
     color: ${Color.secundary};
   }
+  strong{
+    font-weight: bold;
+  }
 
   svg, img{
     user-select: none;

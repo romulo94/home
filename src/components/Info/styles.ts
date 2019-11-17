@@ -23,38 +23,6 @@ export const Icon = styled.img`
   margin: 20px;
 `;
 
-export const Info = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  padding: 20px 0 20px;
-  width: 100%;
-
-  opacity: 0;
-
-  animation: myshowinfo 3s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-
-  z-index: 1000;
-
-  @keyframes myshowinfo {
-    0% {
-    }
-    50% {
-      opacity: 0.2;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  h2 {
-    padding-bottom: 20px;
-    font-weight: 500;
-    text-align: center;
-  }
-`;
 export const Card = styled.div`
   width: 100%;
   display: flex;
@@ -71,6 +39,7 @@ export const Card = styled.div`
 
   @media only screen and (max-width: 600px) {
     flex-direction: column;
+    padding: 25px 0;
   }
   @media only screen and (min-width: 600px) {
     :nth-child(2n + 1) {

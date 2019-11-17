@@ -29,29 +29,3 @@ export const Content = styled.div`
     align-items: center;
   }
 `;
-
-export const Profile = styled.div`
-  display: flex;
-  margin-left: 20px;
-  padding-left: 20px;
-  border-left: 1px solid #eee;
-  div {
-    text-align: right;
-    margin-right: 10px;
-    strong {
-      display: block;
-      color: #333;
-    }
-    a {
-      display: flex;
-      margin-top: 2px;
-      font-size: 12px;
-      color: #999;
-    }
-  }
-  img {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-  }
-`;

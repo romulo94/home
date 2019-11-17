@@ -12,7 +12,12 @@ import LinkedIn from 'assets/linkedin';
 export default function LinkMedia() {
   return (
     <Container>
-      <ButtonIcon icon={Coding} size={48} color={Colors.dark} link="" />
+      <ButtonIcon
+        icon={Coding}
+        size={48}
+        color={Colors.dark}
+        link="https://github.com/romulo94/homepage"
+      />
       <ButtonIcon
         icon={GitHub}
         size={48}

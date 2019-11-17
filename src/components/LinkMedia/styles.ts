@@ -10,13 +10,6 @@ export const Container = styled.div`
   max-width: 320px;
 
   padding: 0 30px 30px 30px;
-
-  @media (max-width: 600px) {
-    display: flex;
-    flex-direction: column;
-    padding: 30px 30px 0px;
-    margin-top: 0px;
-  }
 `;
 
 export const ContainerLinks = styled.div``;
