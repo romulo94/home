@@ -55,7 +55,7 @@ export default function Main() {
         <Avatar src={selfie2} alt="avatar" size={200} />
         <Info>
           <Name>Oi, sou Rômulo Rocha.</Name>
-          <Typist avgTypingDelay={50}>
+          <Typist avgTypingDelay={50} delay={2000}>
             <span>Desenvolvedor fullstack</span>
             <Typist.Backspace count={9} delay={500} />
             <span>Fullstack</span>

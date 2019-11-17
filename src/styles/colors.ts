@@ -9,8 +9,9 @@ const Color = {
   regular: ' #aaa',
   light: '#ddd',
 
-  primary: ' #eee',
+  primary: '#ddd',
   secundary: '#a4a4a4',
+
   success: '#9dca83',
   danger: '#e37a7a',
 

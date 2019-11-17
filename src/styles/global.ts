@@ -8,6 +8,7 @@ export default createGlobalStyle`
     outline:0;
     box-sizing:border-box;
     font-family: 'Fira Code', sans-serif;
+    font-weight: lighter;
   }
   *:focus {
     outline: 0;
@@ -19,6 +20,7 @@ export default createGlobalStyle`
 
   body, #root  {
     height: 100%;
+    overflow-x: hidden;
   }
 
   #root{
@@ -44,5 +46,9 @@ export default createGlobalStyle`
 
   a, h2, h3, h4, span, p{
     color: ${Color.secundary};
+  }
+
+  svg, img{
+    user-select: none;
   }
 `;
