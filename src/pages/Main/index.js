@@ -98,7 +98,7 @@ export default function Main() {
       <ContainerDescription>
         <Description>
           <p>
-            Sou desenvolvedor fullstack há mais de 2 anos. Sou um verdadeiro
+            Sou desenvolvedor fullstack há 2 anos e meio. Sou um verdadeiro
             amante de JavaScript e do ecossistema ao redor. Trabalho com as
             principais tecnologias do mercado: <strong>NodeJs</strong>,{' '}
             <strong>ReactJs</strong> e <strong>React Native</strong>, atuei em
