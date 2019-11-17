@@ -24,6 +24,10 @@ export const Head = styled.div`
 
   width: 100%;
   padding: 20px;
+
+  @media only screen and (max-width: 600px) {
+    padding: 20px 0;
+  }
 `;
 
 export const Avatar = styled.img`
@@ -35,31 +39,41 @@ export const Avatar = styled.img`
 
   margin: 20px;
 
-  position: relative;
+  @media only screen and (min-width: 600px) {
+    position: relative;
 
-  animation: mymove 3s;
-  animation-delay: 0.5s;
-  animation-fill-mode: forwards;
+    animation: mymove 3s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
 
-  z-index: 1000;
+    z-index: 1000;
 
-  @keyframes mymove {
-    from {
-    }
-    to {
-      transform: translateX(300px);
+    @keyframes mymove {
+      from {
+      }
+      to {
+        transform: translateX(300px);
+      }
     }
   }
 `;
 
 export const Box = styled.div`
   position: absolute;
-  margin: 20px;
 
+  margin: 20px;
   z-index: 0;
 
   span {
     font-size: 24px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    position: relative;
+
+    div {
+      height: 128px;
+    }
   }
 `;
 
@@ -98,7 +112,8 @@ export const Info = styled.div`
 
   h2 {
     padding-bottom: 20px;
-    color: ${Colors.lighter};
+    font-weight: 500;
+    /* color: ${Colors.lighter}; */
   }
 `;
 export const Card = styled.div`
@@ -108,15 +123,20 @@ export const Card = styled.div`
   align-items: center;
   padding: 25px;
 
-  :nth-child(2n + 1) {
-    flex-direction: row-reverse;
-  }
-
   p {
     font-size: 16px;
   }
   li {
     font-size: 15px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+  @media only screen and (min-width: 600px) {
+    :nth-child(2n + 1) {
+      flex-direction: row-reverse;
+    }
   }
 `;
 

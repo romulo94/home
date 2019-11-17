@@ -6,8 +6,7 @@ const Color = {
 
   semiblack: '#111',
 
-  regular: ' #aaa',
-  light: '#ddd',
+  regular: '#aaa',
 
   primary: '#ddd',
   secundary: '#a4a4a4',

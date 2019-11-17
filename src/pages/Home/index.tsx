@@ -48,7 +48,7 @@ export default function Home() {
             <p>
               Construo o software arquitetado aplicando métodos como TDD e DDD.
               Preocupado com as regras de negócio, segurança, banco de dados,
-              integração de webservices, a qualidade e documentação do produto.
+              integração de webservices, qualidade e documentação do produto.
               Trabalho com arquiteturas monolíticas e de microserviços.
             </p>
             <li>modelagem de dados</li>
@@ -65,8 +65,8 @@ export default function Home() {
           <Description>
             <p>
               Executo o protótipo idealizado e mantenho a fidelidade entre
-              design e código em todos aparelhos que o produto será usado. Com
-              interatividade entre os elementos da página.
+              design e código em todos os aparelhos que o produto será usado.
+              Com interatividade entre os elementos da página.
             </p>
             <li>implementação das UIs criadas pelo designer</li>
             <li>melhoria e manutenção constante</li>

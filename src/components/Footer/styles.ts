@@ -3,8 +3,10 @@ import styled from 'styled-components';
 export const Container = styled.footer`
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: relative;
   width: 100%;
+
+  height: 100%;
 
   bottom: 0;
   padding: 20px 20px 5px;
@@ -14,10 +16,13 @@ export const Box = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 36px;
 
   h3 {
     font-weight: lighter;
+  }
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
   }
 `;
 

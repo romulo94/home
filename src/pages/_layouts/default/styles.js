@@ -3,7 +3,8 @@ import { darken } from 'polished';
 // import colors from '~/styles/colors';
 
 export const Wrapper = styled.div`
-  display: block;
+  display: flex;
+  align-content: space-between;
   width: 100%;
   flex-direction: column;
   align-content: center;
@@ -11,10 +12,4 @@ export const Wrapper = styled.div`
 
   position: relative;
   min-height: 100vh;
-
-  @media (min-width: 1441px) {
-    background: ${darken(0.02, '#191920')};
-    margin: 20px;
-    border-radius: 20px;
-  }
 `;

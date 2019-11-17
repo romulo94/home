@@ -44,7 +44,16 @@ export default createGlobalStyle`
     cursor: pointer;
   }
 
-  a, h2, h3, h4, span, p{
+  h2{
+    color: ${Color.white}
+  }
+  h3{
+    color: ${Color.lighter}
+  }
+  p, h4{
+    color: ${Color.primary}
+  }
+  span, li, a {
     color: ${Color.secundary};
   }
 
