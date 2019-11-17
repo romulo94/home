@@ -1,6 +1,6 @@
 {
-  "name": "home",
-  "version": "0.1.0",
+  "name": "homepage",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@types/history": "^4.7.3",

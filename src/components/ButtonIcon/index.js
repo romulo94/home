@@ -15,7 +15,7 @@ Image.propTypes = {
   color: PropTypes.string.isRequired,
   icon: PropTypes.func.isRequired,
   size: PropTypes.number,
-  link: PropTypes.number.isRequired,
+  link: PropTypes.string.isRequired,
 };
 
 Image.defaultProps = {

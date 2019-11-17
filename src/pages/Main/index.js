@@ -79,35 +79,6 @@ export default function Main() {
         </Info>
       </ContainerHeader>
 
-      <Stack>
-        <ImageStack
-          icon={DiNodejsSmall}
-          text="NodeJs"
-          color="#3c873a"
-          size={72}
-        />
-        <ImageStack icon={DiReact} text="ReactJS" color="#61dafb" size={72} />
-        <ImageStack
-          icon={DiReact}
-          text="React Native"
-          color="#61dafb"
-          size={72}
-        />
-      </Stack>
-
-      <ContainerDescription>
-        <Description>
-          <p>
-            Sou desenvolvedor fullstack há 2 anos e meio. Sou um verdadeiro
-            amante de JavaScript e do ecossistema ao redor. Trabalho com as
-            principais tecnologias do mercado: <strong>NodeJs</strong>,{' '}
-            <strong>ReactJs</strong> e <strong>React Native</strong>, atuei em
-            startups, empresas e alguns freelas. Tenho algumas aventuras com
-            AWS, Docker, Heroku e Netlify.
-          </p>
-        </Description>
-      </ContainerDescription>
-
       <div>
         <Image icon={AplicationFullStack} size={200} color={colors.dark} />
       </div>
