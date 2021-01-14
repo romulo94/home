@@ -1,18 +1,20 @@
-import { hot } from 'react-hot-loader/root';
-import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-
-import Routes from './routes';
-
-import GlobalStyle from './styles/global';
+import Routes from 'routes';
+import 'assets/fonts/fira-code.css';
+import 'styles/tailwind.css';
+import 'styles/global.css';
+import { useEffect } from 'react';
+import { Style } from 'services';
 
 function App() {
+  useEffect(() => {
+    Style.recognizeDark();
+  }, []);
   return (
     <Router>
-      <GlobalStyle />
       <Routes />
     </Router>
   );
 }
 
-export default hot(App);
+export default App;

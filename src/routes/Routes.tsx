@@ -1,31 +1,25 @@
-import React from 'react';
-
-import { Route } from 'react-router-dom';
-
-import DefaultLayout from 'pages/_layouts/default';
+/* eslint-disable react/prop-types */
+import { Route, RouteProps } from 'react-router-dom';
+import { FC, FunctionComponent } from 'react';
 
 type Props = {
-  component: React.ReactType;
+  component: FunctionComponent;
   isPrivate?: boolean;
-  exact?: boolean;
-  path: string;
 };
 
-export default function RouteWrapper({
+type Params = RouteProps & Props;
+
+const RouteWrapper: FC<Params> = ({
   component: Component,
   isPrivate,
   ...rest
-}: Props) {
-  const Layout = DefaultLayout;
+}) => (
+  <Route
+    {...rest}
+    render={(props) => (
+      <Component {...props} />
+    )}
+  />
+);
 
-  return (
-    <Route
-      {...rest}
-      render={props => (
-        <Layout>
-          <Component {...props} />
-        </Layout>
-      )}
-    />
-  );
-}
+export default RouteWrapper;
