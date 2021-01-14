@@ -27,6 +27,7 @@
     "start": "react-scripts start",
     "test": "react-scripts test",
     "build:style": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
+    "build:style:prod": "NODE_ENV=production npx tailwindcss-cli@latest build ./src/styles/index.css -o ./src/styles/tailwind.css",
     "build": "tsc -p tsconfig.prod.json && react-scripts build",
     "eject": "react-scripts eject"
   },

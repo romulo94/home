@@ -1,12 +1,7 @@
-/* eslint-disable import/no-extraneous-dependencies */
-import colors from 'tailwindcss/colors';
+const colors = require('tailwindcss/colors')
 
 module.exports = {
-  purge: [
-    './src/**/*.html',
-    './src/**/*.tsx',
-    './src/**/*.ts',
-  ],
+  purge: [],
   presets: [],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
@@ -857,4 +852,4 @@ module.exports = {
     zIndex: ['responsive', 'focus-within', 'focus'],
   },
   plugins: [],
-};
+}
