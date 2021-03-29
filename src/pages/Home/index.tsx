@@ -1,8 +1,10 @@
+import MainImg from 'assets/main.jpeg'
+
 export default function Home() {
   return (
     <div className="h-screen flex justify-center bg-gray-800 lg:bg-gradient-to-b from-gray-900 to-gray-600">
       <div className="flex flex-col lg:flex-row w-full lg:max-w-2xl lg:max-h-72 bg-white self-center lg:rounded-3xl shadow-2xl">
-        <img className="w-36 h-36 -mt-16  rounded-full self-center lg:mt-0 lg:rounded-none lg:h-72 lg:w-72" src="https://media-exp1.licdn.com/dms/image/C4E03AQHiSQ-0KS2Peg/profile-displayphoto-shrink_400_400/0/1536804335375?e=1616025600&v=beta&t=7MOJDGCUaSzzmN1JMQ9uIC_QR_Svib4M4NgSYxA4K8c" alt="" />
+        <img className="w-36 h-36 -mt-16  rounded-full self-center lg:mt-0 lg:rounded-none lg:h-72 lg:w-72" src={MainImg} alt="Rômulo Rocha" />
         <div className="p-4 flex flex-col justify-between leading-normal">
           <div className="mb-8 text-center lg:text-justify ">
             <p className="text-sm text-grey-dark">
