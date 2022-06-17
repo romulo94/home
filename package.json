@@ -15,7 +15,7 @@
     "autoprefixer": "^10.2.1",
     "i18next": "^19.8.4",
     "i18next-browser-languagedetector": "^6.1.4",
-    "postcss": "^8.2.4",
+    "postcss": "^8.2.13",
     "postcss-cli": "^8.3.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
